@@ -1,8 +1,8 @@
 import React from "react";
 import { Link, useNavigate } from "react-router-dom";
-import Card from "../../components/shared/card/Card";
+import Card from "../../components/shared/Card/Card";
 import styles from "./Home.module.css";
-import Button from "../../components/shared/button/Button";
+import Button from "../../components/shared/Button/Button";
 
 const Home = () => {
   const signInLinkStyle = {
@@ -15,7 +15,7 @@ const Home = () => {
   const navigate = useNavigate();
   function startRegister() {
     console.log("I am clicked");
-    navigate("/register");
+    navigate("/authenticate");
   }
 
   return (
@@ -32,9 +32,9 @@ const Home = () => {
         <div className={styles.signinWrapper}>
           <span className={styles.hasInvite}>Have an invite text?</span>
           <span>
-            <Link style={signInLinkStyle} to={"/login"}>
+            {/* <Link style={signInLinkStyle} to={"/login"}>
               Sign In
-            </Link>
+            </Link> */}
           </span>
         </div>
       </Card>

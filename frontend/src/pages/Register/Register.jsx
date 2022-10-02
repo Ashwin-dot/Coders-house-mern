@@ -3,7 +3,7 @@ import StepName from "../Steps/StepName/StepName";
 import StepPhoneEmail from "../Steps/StepPhoneEmail/StepPhoneEmail";
 import StepAvatar from "../Steps/StepAvatar/StepAvatar";
 import StepUsername from "../Steps/StepUsername/StepUsername";
-import StepOtp from "../Steps/StepOpt/StepOpt";
+import StepOtp from "../Steps/StepOtp/StepOtp";
 
 const steps = {
   1: StepPhoneEmail,
